@@ -14,7 +14,20 @@ angular.module('MyApp')
       GET[decodeURIComponent(param[0])] = decodeURIComponent(param[1] || "");
   }
 
-  $scope.go = function(command) {
+$scope.init = function(){
+  if(_.has(GET, "onload")){
+    if(GET.onload == "true"){
+    var uri = GET.uri;
+         $http({
+           url: uri,
+           method: "POST"
+         });
+       }
+  }
+}
+
+
+  $scope.go = function() {
     var postData = {};
     var uri = GET.uri;
 
