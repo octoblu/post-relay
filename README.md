@@ -27,11 +27,3 @@ Then go to bit.ly to shorten your URL
 VOILA!
 Next time someone scans that meshtag pattern you created your trigger will get triggered either on load of the page or by pressing the POST button that shows.
 
-Example:
-
-
-somedomain.com/index.html?uri=SOME-WEBHOOK
-
-Add onload=true to trigger on load, and then whenever you press the post button.
-
-somedomain.com/index.html?uri=SOME-WEBHOOK&onload=true
